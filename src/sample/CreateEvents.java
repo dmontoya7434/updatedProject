@@ -15,8 +15,17 @@ public class CreateEvents {
 
     @FXML
     private JFXButton goBack1;
+
     @FXML
     void goBack(ActionEvent event) throws IOException {
+        Parent loginScreen = FXMLLoader.load(getClass().getResource("Admin.fxml"));
+        Stage loginStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        loginStage.setScene(new Scene(loginScreen));
+        loginStage.show();
+    }
+
+    @FXML
+    void submitButton(ActionEvent event) throws IOException {
         Parent loginScreen = FXMLLoader.load(getClass().getResource("Admin.fxml"));
         Stage loginStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         loginStage.setScene(new Scene(loginScreen));

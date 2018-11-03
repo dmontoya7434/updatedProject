@@ -104,5 +104,6 @@
       <JFXTextField alignment="CENTER" layoutX="289.0" layoutY="174.0" promptText="Date:  MM-DD-YY" />
       <JFXTextField alignment="CENTER" layoutX="289.0" layoutY="223.0" promptText="Type:" />
       <JFXTextField alignment="CENTER" layoutX="289.0" layoutY="281.0" promptText="Time: " />
+      <JFXButton fx:id="submitButton" layoutX="331.0" layoutY="344.0" onAction="#submitButton" style="-fx-background-color: #48A5EA;" text="Submit" />
    </children>
 </AnchorPane>
