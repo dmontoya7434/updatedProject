@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="401.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ViewResidents">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="137.0" style="-fx-background-color: #48A5EA;">
+         <children>
+            <Pane prefHeight="105.0" prefWidth="137.0">
+               <children>
+                  <FontAwesomeIcon iconName="XING" layoutY="70.0" size="3em" />
+                  <Text layoutX="28.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Matchmakers" textAlignment="CENTER" wrappingWidth="108.80078125">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="137.0" styleClass="hover_border" stylesheets="@../style.css" text="Add Admin" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="USER" size="1.5em" />
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="137.0" styleClass="hover_border" stylesheets="@../style.css" text="View Payments" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="USD" size="1.5em" />
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="137.0" styleClass="hover_border" stylesheets="@../style.css" text="Create Events" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="CALENDAR" size="1.5em" />
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="137.0" styleClass="hover_border" stylesheets="@../style.css" text="Maintenance" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="COG" size="1.5em" />
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="137.0" styleClass="hover_border" stylesheets="@../style.css" text="View Residents" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="GROUP" size="1.5em" />
+               </graphic>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </JFXButton>
+            <JFXButton onAction="#goBack" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: #48A5EA;" text="Back">
+               <graphic>
+                  <FontAwesomeIcon iconName="ARROW_LEFT" size="1.5em" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <TableView layoutX="138.0" layoutY="83.0" prefHeight="318.0" prefWidth="459.0">
+        <columns>
+          <TableColumn prefWidth="94.0" text="First name" />
+          <TableColumn prefWidth="94.0" text="Last name" />
+            <TableColumn prefWidth="94.0" text="Email" />
+            <TableColumn prefWidth="94.0" text="Gender" />
+            <TableColumn prefWidth="94.0" text="Building" />
+        </columns>
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </TableView>
+      <Text layoutX="247.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Residents">
+         <font>
+            <Font size="48.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Maintenance">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="137.0" style="-fx-background-color: #48A5EA;">
+         <children>
+            <Pane prefHeight="91.0" prefWidth="137.0">
+               <children>
+                  <FontAwesomeIcon iconName="XING" layoutY="58.0" size="3em" />
+                  <Text layoutX="28.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Matchmakers" textAlignment="CENTER" wrappingWidth="109.20050048828125">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="138.0" styleClass="hover_border" stylesheets="@../style.css" text="Add Admin" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="USER" size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="137.0" styleClass="hover_border" stylesheets="@../style.css" text="View Payments" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="USD" size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="137.0" styleClass="hover_border" stylesheets="@../style.css" text="Create Event" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="CALENDAR" size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="136.0" styleClass="hover_border" stylesheets="@../style.css" text="Maintenance" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="COG" size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="139.0" styleClass="hover_border" stylesheets="@../style.css" text="View Residents" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="GROUP" size="1.5em" />
+               </graphic>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="goBack2" alignment="CENTER" onAction="#goBack" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: #48A5EA;" styleClass="hover_border" stylesheets="@../style.css" text="Back">
+               <graphic>
+                  <FontAwesomeIcon iconName="ARROW_LEFT" size="1.5em" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Text layoutX="221.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maintenance Requested">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <FontAwesomeIcon iconName="CHEVRON_RIGHT" layoutX="193.0" layoutY="57.0" size="1.5em" />
+      <FontAwesomeIcon iconName="CHEVRON_LEFT" layoutX="488.0" layoutY="58.0" size="1.5em" />
+      <TableView layoutX="152.0" layoutY="100.0" prefHeight="289.0" prefWidth="434.0" stylesheets="@../style.css">
+        <columns>
+          <TableColumn prefWidth="108.5" text="Type" />
+          <TableColumn prefWidth="108.5" text="Date" />
+            <TableColumn prefWidth="108.5" text="Status" />
+            <TableColumn prefWidth="108.5" text="Fee" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
