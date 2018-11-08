@@ -13,8 +13,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
-import java.io.IOException;
-
 public class Login {
 
 
@@ -33,8 +31,7 @@ public class Login {
     @FXML
     private Button createAccount;
 
-    @FXML
-    void signIn(ActionEvent event) throws IOException {
+    public void signIn(ActionEvent event) throws Exception {
         if(UserID.getText().equals("admin") && userPass.getText().equals("admin")) {
             Parent adminDash = FXMLLoader.load(getClass().getResource("Admin.fxml"));
             Stage adminScreen = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -50,11 +47,9 @@ public class Login {
         else {
             loginFail.setVisible(true);
         }
-
     }
 
-    @FXML
-    void createAccount(ActionEvent event) throws IOException {
+    public void createAccount(ActionEvent event) throws Exception {
 
         Parent createAccount = FXMLLoader.load(getClass().getResource("SignUp.fxml"));
         Stage signUpScreen = (Stage) ((Node) event.getSource()).getScene().getWindow();

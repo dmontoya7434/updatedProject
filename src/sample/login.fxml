@@ -28,6 +28,6 @@
       <Button fx:id="createAccount" layoutX="357.0" layoutY="296.0" mnemonicParsing="false" onAction="#createAccount" text="New User" />
       <FontAwesomeIcon iconName="USER" layoutX="249.0" layoutY="174.0" size="3em" />
       <FontAwesomeIcon iconName="LOCK" layoutX="251.0" layoutY="239.0" size="3em" />
-      <Label fx:id="loginFail" layoutX="309.0" layoutY="346.0" text="Invalid Login Credentials" />
+      <Label fx:id="loginFail" layoutX="309.0" layoutY="346.0" text="Invalid Login Credentials" visible="false" />
    </children>
 </AnchorPane>

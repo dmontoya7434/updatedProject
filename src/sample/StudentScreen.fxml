@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StudentScreen">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="137.0" style="-fx-background-color: #48A5EA;">
+         <children>
+            <Pane prefHeight="165.0" prefWidth="137.0">
+               <children>
+                  <FontAwesomeIcon iconName="USER" layoutX="45.0" layoutY="79.0" size="5em" />
+               </children>
+            </Pane>
+            <JFXButton prefHeight="25.0" prefWidth="148.0" styleClass="hover_border" stylesheets="@../style.css" text="Lease Document" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="FILE" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="studentMaintenance" onAction="#maintenance" prefHeight="25.0" prefWidth="137.0" styleClass="hover_border" stylesheets="@../style.css" text="Submit Maintenance" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="COG" />
+               </graphic>
+            </JFXButton>
+            <JFXButton fx:id="logout" onAction="#logOut" prefHeight="25.0" prefWidth="151.0" styleClass="hover_border" stylesheets="@../style.css" text="Log Out" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIcon iconName="ARROW_LEFT" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
