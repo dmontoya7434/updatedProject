@@ -49,7 +49,7 @@ public class SubmitMaintenance {
   }
 
   public void submit(ActionEvent event) throws Exception {
-    Parent loginScreen = FXMLLoader.load(getClass().getResource("Login.fxml"));
+    Parent loginScreen = FXMLLoader.load(getClass().getResource("StudentScreen.fxml"));
     Stage loginStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
     loginStage.setScene(new Scene(loginScreen));
     loginScreen.getStylesheets().add

@@ -13,13 +13,13 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewAdmin">
    <children>
-      <Text layoutX="256.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Admin">
+      <Text layoutX="280.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Admin">
          <font>
-            <Font size="36.0" />
+            <Font size="24.0" />
          </font>
       </Text>
       <JFXButton fx:id="submitButton" layoutX="311.0" layoutY="311.0" onAction="#submitButton" style="-fx-background-color: #48A5EA;" text="Submit" />
-      <VBox prefHeight="400.0" prefWidth="137.0" style="-fx-background-color: #48A5EA;">
+      <VBox prefHeight="400.0" prefWidth="155.0" style="-fx-background-color: #48A5EA;">
          <children>
             <Pane prefHeight="97.0" prefWidth="156.0">
                <children>
@@ -31,7 +31,7 @@
                   </Text>
                </children>
             </Pane>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="139.0" styleClass="hover_border" stylesheets="@../../../../IdeaProjects/softwareFundementalsProject2/src/style.css" text="Add Admin" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../../../../IdeaProjects/softwareFundementalsProject2/src/style.css" text="Add Admin" textAlignment="CENTER" textFill="WHITE">
                <graphic>
                   <FontAwesomeIcon iconName="USER" size="1.5em" />
                </graphic>
@@ -42,7 +42,7 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="139.0" styleClass="hover_border" stylesheets="@../../../../IdeaProjects/softwareFundementalsProject2/src/style.css" text="View Payments" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../../../../IdeaProjects/softwareFundementalsProject2/src/style.css" text="View Payments" textAlignment="CENTER" textFill="WHITE">
                <graphic>
                   <FontAwesomeIcon iconName="USD" size="1.5em" />
                </graphic>
@@ -53,7 +53,7 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="139.0" styleClass="hover_border" stylesheets="@../../../../IdeaProjects/softwareFundementalsProject2/src/style.css" text="Create Events" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../../../../IdeaProjects/softwareFundementalsProject2/src/style.css" text="Create Events" textAlignment="CENTER" textFill="WHITE">
                <graphic>
                   <FontAwesomeIcon iconName="CALENDAR" size="1.5em" />
                </graphic>
@@ -64,7 +64,7 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="142.0" styleClass="hover_border" stylesheets="@../../../../IdeaProjects/softwareFundementalsProject2/src/style.css" text="Maintenance" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../../../../IdeaProjects/softwareFundementalsProject2/src/style.css" text="Maintenance" textAlignment="CENTER" textFill="WHITE">
                <graphic>
                   <FontAwesomeIcon iconName="COG" size="1.5em" />
                </graphic>
@@ -75,7 +75,7 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="143.0" styleClass="hover_border" stylesheets="@../../../../IdeaProjects/softwareFundementalsProject2/src/style.css" text="View Residents" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../../../../IdeaProjects/softwareFundementalsProject2/src/style.css" text="View Residents" textAlignment="CENTER" textFill="WHITE">
                <graphic>
                   <FontAwesomeIcon iconName="GROUP" size="1.5em" />
                </graphic>
@@ -86,7 +86,7 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton fx:id="backButton" alignment="CENTER" onAction="#goBack" prefHeight="25.0" prefWidth="138.0" style="-fx-background-color: #48A5EA;" stylesheets="@../../../../IdeaProjects/softwareFundementalsProject2/src/style.css" text="Back" textAlignment="CENTER" textFill="WHITE">
+            <JFXButton fx:id="backButton" alignment="CENTER" onAction="#goBack" prefHeight="26.0" prefWidth="155.0" style="-fx-background-color: #48A5EA;" stylesheets="@../../../../IdeaProjects/softwareFundementalsProject2/src/style.css" text="Back" textAlignment="CENTER" textFill="WHITE">
                <graphic>
                   <FontAwesomeIcon iconName="ARROW_LEFT" size="1.5em" />
                </graphic>
@@ -102,7 +102,7 @@
       <JFXTextField layoutX="368.0" layoutY="127.0" promptText="Last Name" />
       <JFXTextField layoutX="218.0" layoutY="222.0" promptText="Email " />
       <JFXComboBox layoutX="365.0" layoutY="222.0" promptText="Sex" />
-      <FontAwesomeIcon iconName="CHEVRON_LEFT" layoutX="482.0" layoutY="71.0" size="2.4em" />
-      <FontAwesomeIcon iconName="CHEVRON_RIGHT" layoutX="227.0" layoutY="70.0" size="2.4em" />
+      <FontAwesomeIcon iconName="CHEVRON_LEFT" layoutX="435.0" layoutY="73.0" size="1.5em" text="" />
+      <FontAwesomeIcon iconName="CHEVRON_RIGHT" layoutX="255.0" layoutY="73.0" size="1.5em" />
    </children>
 </AnchorPane>

@@ -1,5 +1,7 @@
 package sample;
 
+import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXTextField;
 import java.io.IOException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -11,11 +13,34 @@ import javafx.stage.Stage;
 
 public class StudentScreen {
 
+  @FXML
+  private JFXTextField residentsName;
+  
+  @FXML
+  private JFXButton LeaseDocument;
 
   @FXML
   void maintenance(ActionEvent event) throws IOException {
 
     Parent maintenance = FXMLLoader.load(getClass().getResource("SubmitMaintenance.fxml"));
+    Stage signUpScreen = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    signUpScreen.setScene(new Scene(maintenance));
+    signUpScreen.show();
+  }
+
+  @FXML
+  void payment(ActionEvent event) throws IOException {
+
+    Parent maintenance = FXMLLoader.load(getClass().getResource("SubmitPayment.fxml"));
+    Stage signUpScreen = (Stage) ((Node) event.getSource()).getScene().getWindow();
+    signUpScreen.setScene(new Scene(maintenance));
+    signUpScreen.show();
+  }
+
+  @FXML
+  void lease(ActionEvent event) throws IOException {
+
+    Parent maintenance = FXMLLoader.load(getClass().getResource("LeaseDocument.fxml"));
     Stage signUpScreen = (Stage) ((Node) event.getSource()).getScene().getWindow();
     signUpScreen.setScene(new Scene(maintenance));
     signUpScreen.show();

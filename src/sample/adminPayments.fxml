@@ -11,22 +11,21 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AdminPayments">
    <children>
-      <VBox prefHeight="400.0" prefWidth="137.0" style="-fx-background-color: #48A5EA;">
+      <VBox prefHeight="400.0" prefWidth="155.0" style="-fx-background-color: #48A5EA;">
          <children>
             <Pane prefHeight="106.0" prefWidth="137.0">
                <children>
-                  <FontAwesomeIcon iconName="XING" layoutY="65.0" size="3em" />
-                  <Text layoutX="28.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Matchmakers" textAlignment="CENTER" wrappingWidth="108.13412475585938">
+                  <FontAwesomeIcon iconName="XING" layoutY="52.0" size="3em" text="" />
+                  <Text layoutX="32.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Matchmakers" textAlignment="CENTER" wrappingWidth="108.13412475585938">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Text>
                </children>
             </Pane>
-            <JFXButton prefHeight="25.0" prefWidth="149.0" text="Add Admin" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="Add Admin" textFill="WHITE">
                <graphic>
                   <FontAwesomeIcon iconName="USER" size="1.5em" />
                </graphic>
@@ -36,8 +35,11 @@
                <padding>
                   <Insets left="20.0" />
                </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
             </JFXButton>
-            <JFXButton prefHeight="25.0" prefWidth="149.0" text="View Payments" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="View Payments" textFill="WHITE">
                <graphic>
                   <FontAwesomeIcon iconName="USD" size="1.5em" />
                </graphic>
@@ -48,7 +50,7 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton prefHeight="25.0" prefWidth="149.0" text="Create Events" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="Create Events" textFill="WHITE">
                <graphic>
                   <FontAwesomeIcon iconName="CALENDAR" size="1.5em" />
                </graphic>
@@ -59,7 +61,7 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton prefHeight="25.0" prefWidth="149.0" text="Maintenance" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="Maintenance" textFill="WHITE">
                <graphic>
                   <FontAwesomeIcon iconName="COG" size="1.5em" />
                </graphic>
@@ -70,7 +72,7 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton prefHeight="25.0" prefWidth="149.0" text="View Residents" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="View Residents" textFill="WHITE">
                <graphic>
                   <FontAwesomeIcon iconName="GROUP" size="1.5em" />
                </graphic>
@@ -81,7 +83,7 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton fx:id="goBack" onAction="#goBack" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #48A5EA;" text="Back">
+            <JFXButton fx:id="goBack" onAction="#goBack" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: #48A5EA;" text="Back">
                <graphic>
                   <FontAwesomeIcon iconName="ARROW_LEFT" size="1.5em" />
                </graphic>
@@ -95,12 +97,12 @@
       </Text>
       <FontAwesomeIcon iconName="CHEVRON_RIGHT" layoutX="255.0" layoutY="55.0" size="1.5em" />
       <FontAwesomeIcon iconName="CHEVRON_LEFT" layoutX="476.0" layoutY="58.0" size="1.5em" />
-      <TableView layoutX="151.0" layoutY="106.0" prefHeight="262.0" prefWidth="439.0">
+      <TableView layoutX="155.0" layoutY="108.0" prefHeight="262.0" prefWidth="444.0">
         <columns>
           <TableColumn prefWidth="108.5" text="Resident Name" />
           <TableColumn prefWidth="108.5" text="Amount" />
             <TableColumn prefWidth="108.5" text="Date Payed" />
-            <TableColumn prefWidth="111.0" text="Building" />
+            <TableColumn prefWidth="116.66668701171875" text="Building" />
         </columns>
       </TableView>
    </children>

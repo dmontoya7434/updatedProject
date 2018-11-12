@@ -10,24 +10,23 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CreateEvents">
    <children>
-      <VBox prefHeight="400.0" prefWidth="137.0" style="-fx-background-color: #48A5EA;">
+      <VBox prefHeight="400.0" prefWidth="155.0" style="-fx-background-color: #48A5EA;">
          <children>
             <Pane prefHeight="115.0" prefWidth="137.0">
                <children>
-                  <FontAwesomeIcon iconName="XING" layoutY="70.0" size="3em" />
-                  <Text layoutX="28.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Matchmakers" textAlignment="CENTER" wrappingWidth="108.80078125">
+                  <FontAwesomeIcon iconName="XING" layoutY="51.0" size="3em" />
+                  <Text layoutX="32.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Matchmakers" textAlignment="CENTER" wrappingWidth="108.80078125">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Text>
                </children>
             </Pane>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="137.0" styleClass="hover_border" stylesheets="@../style.css" text="Add Admin" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="156.0" styleClass="hover_border" stylesheets="@../style.css" text="Add Admin" textFill="WHITE">
                <graphic>
-                  <FontAwesomeIcon iconName="USER" />
+                  <FontAwesomeIcon iconName="USER" size="1.5em" />
                </graphic>
                <VBox.margin>
                   <Insets bottom="10.0" />
@@ -36,9 +35,9 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="137.0" styleClass="hover_border" stylesheets="@../style.css" text="View Payments" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="View Payments" textFill="WHITE">
                <graphic>
-                  <FontAwesomeIcon iconName="USD" />
+                  <FontAwesomeIcon iconName="USD" size="1.5em" text="" />
                </graphic>
                <VBox.margin>
                   <Insets bottom="10.0" />
@@ -47,9 +46,9 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="137.0" styleClass="hover_border" stylesheets="@../style.css" text="Create Events" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="Create Events" textFill="WHITE">
                <graphic>
-                  <FontAwesomeIcon iconName="CALENDAR" />
+                  <FontAwesomeIcon iconName="CALENDAR" size="1.5em" />
                </graphic>
                <VBox.margin>
                   <Insets bottom="10.0" />
@@ -58,9 +57,9 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="137.0" styleClass="hover_border" stylesheets="@../style.css" text="Maintenance" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="Maintenance" textFill="WHITE">
                <graphic>
-                  <FontAwesomeIcon iconName="COG" />
+                  <FontAwesomeIcon iconName="COG" size="1.5em" />
                </graphic>
                <VBox.margin>
                   <Insets bottom="10.0" />
@@ -69,9 +68,9 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="137.0" styleClass="hover_border" stylesheets="@../style.css" text="View Residents" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="View Residents" textFill="WHITE">
                <graphic>
-                  <FontAwesomeIcon iconName="GROUP" />
+                  <FontAwesomeIcon iconName="GROUP" size="1.5em" />
                </graphic>
                <VBox.margin>
                   <Insets bottom="10.0" />
@@ -80,7 +79,7 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton fx:id="goBack1" onAction="#goBack" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: #48A5EA;" styleClass="hover_border" stylesheets="@../style.css" text="Back" textFill="WHITE">
+            <JFXButton fx:id="goBack1" onAction="#goBack" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: #48A5EA;" styleClass="hover_border" stylesheets="@../style.css" text="Back" textFill="WHITE">
                <graphic>
                   <FontAwesomeIcon iconName="ARROW_LEFT" />
                </graphic>

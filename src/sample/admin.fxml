@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewAdmin">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NewAdmin">
    <children>
       <VBox prefHeight="400.0" prefWidth="155.0" style="-fx-background-color: #48A5EA;">
          <children>
@@ -82,6 +82,11 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
+            <JFXButton onAction="#logOut" prefHeight="25.0" prefWidth="160.0" text="Log Out">
+               <graphic>
+                  <FontAwesomeIcon iconName="ARROW_LEFT" />
+               </graphic>
+            </JFXButton>
          </children>
       </VBox>
       <HBox alignment="CENTER_LEFT" layoutX="155.0" prefHeight="73.0" prefWidth="447.0">
@@ -121,5 +126,21 @@
             </HBox>
          </children>
       </HBox>
+      <VBox layoutX="185.0" layoutY="100.0" prefHeight="278.0" prefWidth="401.0" style="-fx-background-color: #c0c0c0;">
+         <children>
+            <Pane prefHeight="83.0" prefWidth="401.0">
+               <children>
+                  <Text layoutX="158.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reminders">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Make sure to add admin" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Check email" wrappingWidth="136.4869384765625" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Make sure maintenance is up to date" />
+         </children>
+      </VBox>
    </children>
 </AnchorPane>

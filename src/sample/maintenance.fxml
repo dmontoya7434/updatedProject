@@ -11,22 +11,21 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Maintenance">
+<AnchorPane prefHeight="395.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Maintenance">
    <children>
-      <VBox prefHeight="400.0" prefWidth="137.0" style="-fx-background-color: #48A5EA;">
+      <VBox prefHeight="400.0" prefWidth="155.0" style="-fx-background-color: #48A5EA;">
          <children>
             <Pane prefHeight="91.0" prefWidth="137.0">
                <children>
-                  <FontAwesomeIcon iconName="XING" layoutY="58.0" size="3em" />
-                  <Text layoutX="28.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Matchmakers" textAlignment="CENTER" wrappingWidth="109.20050048828125">
+                  <FontAwesomeIcon iconName="XING" layoutX="2.0" layoutY="50.0" size="3em" />
+                  <Text layoutX="31.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Matchmakers" textAlignment="CENTER" wrappingWidth="109.20050048828125">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Text>
                </children>
             </Pane>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="138.0" styleClass="hover_border" stylesheets="@../style.css" text="Add Admin" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="Add Admin" textFill="WHITE">
                <graphic>
                   <FontAwesomeIcon iconName="USER" size="1.5em" />
                </graphic>
@@ -37,7 +36,7 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="137.0" styleClass="hover_border" stylesheets="@../style.css" text="View Payments" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="View Payments" textFill="WHITE">
                <graphic>
                   <FontAwesomeIcon iconName="USD" size="1.5em" />
                </graphic>
@@ -48,7 +47,7 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="137.0" styleClass="hover_border" stylesheets="@../style.css" text="Create Event" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="Create Event" textFill="WHITE">
                <graphic>
                   <FontAwesomeIcon iconName="CALENDAR" size="1.5em" />
                </graphic>
@@ -59,7 +58,7 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="136.0" styleClass="hover_border" stylesheets="@../style.css" text="Maintenance" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="Maintenance" textFill="WHITE">
                <graphic>
                   <FontAwesomeIcon iconName="COG" size="1.5em" />
                </graphic>
@@ -70,7 +69,7 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="139.0" styleClass="hover_border" stylesheets="@../style.css" text="View Residents" textFill="WHITE">
+            <JFXButton alignment="BASELINE_LEFT" prefHeight="26.0" prefWidth="155.0" styleClass="hover_border" stylesheets="@../style.css" text="View Residents" textFill="WHITE">
                <graphic>
                   <FontAwesomeIcon iconName="GROUP" size="1.5em" />
                </graphic>
@@ -81,7 +80,7 @@
                   <Insets left="20.0" />
                </padding>
             </JFXButton>
-            <JFXButton fx:id="goBack2" alignment="CENTER" onAction="#goBack" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: #48A5EA;" styleClass="hover_border" stylesheets="@../style.css" text="Back">
+            <JFXButton fx:id="goBack2" alignment="CENTER" onAction="#goBack" prefHeight="26.0" prefWidth="159.0" style="-fx-background-color: #48A5EA;" styleClass="hover_border" stylesheets="@../style.css" text="Back">
                <graphic>
                   <FontAwesomeIcon iconName="ARROW_LEFT" size="1.5em" />
                </graphic>
@@ -95,12 +94,12 @@
       </Text>
       <FontAwesomeIcon iconName="CHEVRON_RIGHT" layoutX="193.0" layoutY="57.0" size="1.5em" />
       <FontAwesomeIcon iconName="CHEVRON_LEFT" layoutX="488.0" layoutY="58.0" size="1.5em" />
-      <TableView layoutX="152.0" layoutY="100.0" prefHeight="289.0" prefWidth="434.0" stylesheets="@../style.css">
+      <TableView layoutX="155.0" layoutY="96.0" prefHeight="303.0" prefWidth="445.0" stylesheets="@../style.css">
         <columns>
-          <TableColumn prefWidth="108.5" text="Type" />
-          <TableColumn prefWidth="108.5" text="Date" />
-            <TableColumn prefWidth="108.5" text="Status" />
-            <TableColumn prefWidth="108.5" text="Fee" />
+          <TableColumn prefWidth="115.33338928222656" text="Type" />
+          <TableColumn prefWidth="107.33331298828125" text="Date" />
+            <TableColumn prefWidth="110.66668701171875" text="Status" />
+            <TableColumn prefWidth="110.66665649414062" text="Fee" />
         </columns>
       </TableView>
    </children>

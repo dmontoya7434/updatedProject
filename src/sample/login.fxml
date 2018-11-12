@@ -18,16 +18,16 @@
             <Image url="@../apartment.jpg" />
          </image>
       </ImageView>
-      <Text layoutX="169.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Matchmakers">
+      <Text layoutX="112.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The Matchmakers">
          <font>
             <Font size="48.0" />
          </font></Text>
-      <JFXTextField fx:id="UserID" layoutX="289.0" layoutY="149.0" promptText="User ID" unFocusColor="WHITE" />
-      <JFXPasswordField fx:id="userPass" layoutX="289.0" layoutY="214.0" promptText="Password" unFocusColor="#f0f0f0" />
-      <Button fx:id="login" layoutX="263.0" layoutY="296.0" mnemonicParsing="false" onAction="#signIn" text="Login" />
-      <Button fx:id="createAccount" layoutX="357.0" layoutY="296.0" mnemonicParsing="false" onAction="#createAccount" text="New User" />
-      <FontAwesomeIcon iconName="USER" layoutX="249.0" layoutY="174.0" size="3em" />
-      <FontAwesomeIcon iconName="LOCK" layoutX="251.0" layoutY="239.0" size="3em" />
+      <JFXTextField fx:id="UserID" layoutX="242.0" layoutY="148.0" promptText="User ID" unFocusColor="WHITE" />
+      <JFXPasswordField fx:id="userPass" layoutX="242.0" layoutY="214.0" promptText="Password" unFocusColor="#f0f0f0" />
+      <Button fx:id="login" layoutX="242.0" layoutY="296.0" mnemonicParsing="false" onAction="#signIn" style="-fx-background-color: #48A5EA;" text="Login" />
+      <Button fx:id="createAccount" layoutX="309.0" layoutY="296.0" mnemonicParsing="false" onAction="#createAccount" style="-fx-background-color: #48A5EA;" text="New User" />
+      <FontAwesomeIcon iconName="USER" layoutX="194.0" layoutY="174.0" size="3em" />
+      <FontAwesomeIcon iconName="LOCK" layoutX="196.0" layoutY="241.0" size="3em" text="" />
       <Label fx:id="loginFail" layoutX="309.0" layoutY="346.0" text="Invalid Login Credentials" visible="false" />
    </children>
 </AnchorPane>
