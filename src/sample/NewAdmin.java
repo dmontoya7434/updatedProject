@@ -80,6 +80,7 @@ public class NewAdmin {
         loginStage.show();
     }
 
+    @FXML
     void logOut(ActionEvent event) throws Exception {
         Parent loginScreen = FXMLLoader.load(getClass().getResource("Login.fxml"));
         Stage loginStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
