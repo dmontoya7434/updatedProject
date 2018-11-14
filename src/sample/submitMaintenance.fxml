@@ -12,6 +12,8 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SubmitMaintenance">
    <children>
       <VBox prefHeight="400.0" prefWidth="155.0" style="-fx-background-color: #48A5EA;">
@@ -61,7 +63,15 @@
             </JFXButton>
          </children>
       </VBox>
-      <JFXComboBox fx:id="type" layoutX="324.0" layoutY="83.0" prefHeight="25.0" prefWidth="150.0" promptText="Maintenance Issue" />
+      <JFXComboBox fx:id="type" layoutX="324.0" layoutY="83.0" prefHeight="25.0" prefWidth="150.0" promptText="Maintenance Issue" >
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Electricity" />
+               <String fx:value="Plumbing" />
+               <String fx:value="Other" />
+            </FXCollections>
+         </items>
+      </JFXComboBox>
       <JFXTextField fx:id="room" layoutX="316.0" layoutY="131.0" prefHeight="25.0" prefWidth="150.0" promptText="Ex: A-110" />
       <Text layoutX="181.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Task Type" wrappingWidth="53.47003173828125" />
       <Text layoutX="181.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room #" wrappingWidth="53.47003173828125" />
